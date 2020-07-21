@@ -186,7 +186,7 @@ export default class AtTabs extends AtComponent<AtTabsProps, AtTabsState> {
         <View
           className={itemCls}
           id={`tab${idx}`}
-          key={item.title}
+          key={`key${idx}`}
           onClick={this.handleClick.bind(this, idx)}
         >
           {item.title}
